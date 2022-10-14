@@ -1,0 +1,417 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --black500: #292625;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeueBold.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeueBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('./assets/fonts/Bebas.woff2') format('woff2'),
+        url('./assets/fonts/Bebas.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('./assets/fonts/BebasNeueBook.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeueBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Light.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Bold.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeueLight.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeueLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('./assets/fonts/BebasNeue-Book.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeue-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Thin.woff2') format('woff2'),
+        url('./assets/fonts/BebasNeue-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trajan';
+    src: url('./assets/fonts/TrajanBold.woff2') format('woff2'),
+        url('./assets/fonts/TrajanBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('./assets/fonts/TrajanPro-Bold.woff2') format('woff2'),
+        url('./assets/fonts/TrajanPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Trajan Pro';
+    src: url('./assets/fonts/TrajanPro-Regular.woff2') format('woff2'),
+        url('./assets/fonts/TrajanPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Light.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Bold.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Black.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Medium.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Regular.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay';
+    src: url('./assets/fonts/SFCompactDisplay-Ultralight.woff2') format('woff2'),
+        url('./assets/fonts/SFCompactDisplay-Ultralight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Black.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./assets/fonts/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Thin.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-UltralightItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./assets/fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('./assets/fonts/SFProDisplay-Ultralight.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFRounded';
+    src: url('./assets/fonts/SFRounded-Black.woff2') format('woff2'),
+        url('./assets/fonts/SFRounded-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFRounded';
+    src: url('./assets/fonts/SFRounded-Bold.woff2') format('woff2'),
+        url('./assets/fonts/SFRounded-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFRounded';
+    src: url('./assets/fonts/SFRounded-Heavy.woff2') format('woff2'),
+        url('./assets/fonts/SFRounded-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFRounded';
+    src: url('./assets/fonts/SFRounded-Medium.woff2') format('woff2'),
+        url('./assets/fonts/SFRounded-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFRounded';
+    src: url('./assets/fonts/SFRounded-Light.woff2') format('woff2'),
+        url('./assets/fonts/SFRounded-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.App {
+    height: 100%;
+}
+
+.slideMoodSport .slick-prev {
+    left: 5px;
+    z-index: 1;
+}
+
+.slideMoodSport .slick-next {
+    right: 5px;
+    z-index: 0;
+}
