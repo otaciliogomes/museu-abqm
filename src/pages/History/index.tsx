@@ -6,8 +6,14 @@ import { v4 } from 'uuid'
 
 import * as S from './styles'
 import { mock } from './mock'
+import { ResponseItems } from '../../interface';
 
-export const History = () => {
+type HistoryProps = {
+    dataHistory: ResponseItems[]
+}
+
+
+export const History = ({ dataHistory }: HistoryProps) => {
     const [openModal, setOpenModal] = useState(false)
     const [infoModal, setInfoModal] = useState({} as any)
 
@@ -18,7 +24,7 @@ export const History = () => {
             item
         })
     }
-
+console.log(dataHistory)
     function handleCloseModal() {
         setOpenModal(false)
     }

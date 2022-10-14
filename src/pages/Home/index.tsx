@@ -75,7 +75,7 @@ export const Home = () => {
 			);
 
 		try {
-			const response = await api.get(`${endpoints.ITENSLITS}/${presidentModuleId?.id}`);
+			const response = await api.get(`${endpoints.ITENSLIST}/${presidentModuleId?.id}`);
 			setPresidentList(response.data);
 		} catch (error) {
 			console.error(error);
@@ -91,7 +91,7 @@ export const Home = () => {
 			);
 
 		try {
-			const response = await api.get(`${endpoints.ITENSLITS}/${presidentModuleId?.id}`);
+			const response = await api.get(`${endpoints.ITENSLIST}/${presidentModuleId?.id}`);
 			setQuartoDeMilhaHistory(response.data[0]);
 		} catch (error) {
 			console.error(error);
@@ -107,7 +107,7 @@ export const Home = () => {
 			);
 
 		try {
-			const response = await api.get(`${endpoints.ITENSLITS}/${presidentModuleId?.id}`);
+			const response = await api.get(`${endpoints.ITENSLIST}/${presidentModuleId?.id}`);
 			setDataTimeLine(response.data);
 		} catch (error) {
 			console.error(error);
@@ -123,7 +123,7 @@ export const Home = () => {
 			);
 
 		try {
-			const response = await api.get(`${endpoints.ITENSLITS}/${presidentModuleId?.id}`);
+			const response = await api.get(`${endpoints.ITENSLIST}/${presidentModuleId?.id}`);
 			setDataMoodSport(response.data);
 		} catch (error) {
 			console.error(error);
@@ -139,7 +139,7 @@ export const Home = () => {
 			);
 
 		try {
-			const response = await api.get(`${endpoints.ITENSLITS}/${presidentModuleId?.id}`);
+			const response = await api.get(`${endpoints.returnMenus}/${presidentModuleId?.id}`);
 			setDataHistory(response.data);
 		} catch (error) {
 			handleTost('error', "Erro ao carregar acervo histórico")
@@ -154,7 +154,7 @@ export const Home = () => {
 			);
 
 		try {
-			const response = await api.get(`${endpoints.ITENSLITS}/${presidentModuleId?.id}`);
+			const response = await api.get(`${endpoints.ITENSLIST}/${presidentModuleId?.id}`);
 			setDataCategories(response.data);
 		} catch (error) {
 			console.error(error)
@@ -227,7 +227,7 @@ export const Home = () => {
                    por todos que ajudaram a tomar a raça referência no país.
                 "
 							/>
-							<History />
+							<History dataHistory={dataHistory}/>
 						</div>
 						<div className="vh-100">
 							<Header

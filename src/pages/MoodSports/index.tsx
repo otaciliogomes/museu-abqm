@@ -5,6 +5,7 @@ import * as S from './styles';
 import { Card } from './Card';
 import { HighlightedCard } from './HighlightedCard';
 import { ResponseItems } from '../../interface';
+import { v4 } from 'uuid';
 
 type MoodSportProps = {
 	data: ResponseItems[]
@@ -32,7 +33,7 @@ export const MoodSports = ({ data } : MoodSportProps) => {
 					// eslint-disable-next-line react/jsx-key
 					<S.Content>
 						<HighlightedCard
-							key={index}
+							key={v4()}
 							label={item?.title}
 							img={`${urlImage}/${item?.content_files[0]?.file}`}
 							history={item?.text}
@@ -43,7 +44,7 @@ export const MoodSports = ({ data } : MoodSportProps) => {
 			<S.ContainerCards className='hiddenScrollbar'>
 				{data.map((item, index) => (
 					<Card
-						key={index}
+						key={v4()}
 						label={item?.title}
 						image={`${urlImage}/${item?.content_files[1]?.file}`}
 						onClick={() => refSlide?.current?.slickGoTo(index)}

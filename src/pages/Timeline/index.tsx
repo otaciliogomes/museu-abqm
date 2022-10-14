@@ -4,6 +4,7 @@ import * as S from './styles';
 import { HighlightedCard } from './HighlightedCard';
 import { Modal } from './Modal';
 import { TimelineCard } from './TimelineCard';
+import { v4 } from 'uuid';
 
 export type DataTimeLineType = {
 	id: number,
@@ -60,7 +61,7 @@ export const Timeline = ({ dataTimeLine }: TimeLineProps) => {
 				{orderTimeLine?.map((item, index, data) => (
 					<S.Content>
 						<HighlightedCard
-							key={index}
+							key={v4()}
 							galleyData={item}
 							title={item?.title}
 							subtitle={item?.resume}
@@ -73,8 +74,8 @@ export const Timeline = ({ dataTimeLine }: TimeLineProps) => {
 				))}
 			</Slider>
 			<S.WrapTimeLine>
-				{orderTimeLine?.map((item, index) => (
-					<TimelineCard year={item?.title} key={index} />
+				{orderTimeLine?.map((item) => (
+					<TimelineCard year={item?.title} key={v4()} />
 				))}
 			</S.WrapTimeLine>
 			<Modal

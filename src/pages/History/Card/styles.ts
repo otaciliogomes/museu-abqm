@@ -2,17 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const Container = styled.button`
-   display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     height: 352px;
-    cursor: pointer;
-    background-size: contain;
+    width: 350px;
     padding-top: 50px;
-    background-repeat: no-repeat;
+
+    cursor: pointer;
     transition: 0.7s;
-    
+    border: none;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #000000;
+
     &:hover {
         transform: scale(1.1);
     }
@@ -24,8 +30,7 @@ export const Container = styled.button`
         display: flex;
 
         width: 100%; 
-        height: 100%;
-        height: 100vh;
+        height: 270px;
         max-height: 270px;
     }
     @media (min-width: 0px) and (max-width: 1024px){

@@ -3,6 +3,7 @@ import { Card } from './Card';
 import { Modal } from './Modal';
 import Slider from 'react-slick';
 import * as S from './styles';
+import { v4 } from 'uuid';
 
 export type PresidentType = {
 	id: number,
@@ -71,7 +72,7 @@ export const Presidents = ({ presidentList }: PresidentProps) => {
 			>
 				{presidentList.map((item, index) => (
 					<Card
-						key={index}
+						key={v4()}
 						label={item.title}
 						img={item.content_files[0]?.file} //@ts-ignore
 						onClick={() => handleOpenModalInfo(item)}

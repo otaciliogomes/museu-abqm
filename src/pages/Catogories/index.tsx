@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import * as S from './styles';
 import { Card } from './Card';
+import { v4 } from 'uuid'
 import { HighlightedCard } from './HighlightedCard';
 import { dataTopo } from '../../mock/mock-topo';
 import { Modal } from './Modal';
@@ -53,7 +54,7 @@ export const Categories = ({ dataCategories }: CategoriesProps) => {
 			>
 				{dataCategories.map((item, index) => (
 					<Card
-						key={index}
+						key={v4()}
 						onClick={handleOpenModal}
 						firstItemCard={item}
 					/>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, ChangeEvent, useContext } from 'react';
 import axios from 'axios';
+import { v4 } from "uuid"
 
 import * as S from './styles';
 import { ToastContext } from '../../context';
@@ -187,7 +188,7 @@ export const Form = () => {
 						{selectedUf !== '0' ? null : <option value="0">Selecione uma UF</option>}
 						{states.map(state => (
 							<option
-								key={state.id}
+								key={v4()}
 								value={state.sigla}
 							>
 								{`${state.sigla} - ${state.nome}`}
@@ -211,7 +212,7 @@ export const Form = () => {
 						</option>
 						{citys.map(city => (
 							<option
-								key={city.id}
+								key={v4()}
 								value={city.nome}
 							>
 								{`${city.nome}`}
