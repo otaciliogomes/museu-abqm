@@ -6,15 +6,14 @@ export const Container = styled.div`
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 65vh;
-    overflow: hidden;
+    height: 92.5%;
+    /* overflow: hidden; */
 
     > img {
         margin-right: 10px;
         object-fit: cover;
 
-        height: 100%;
-        max-height: 800px;
+        height: 75.5%;
         max-width: 700px;
         border: 6px solid #FFFFFF; 
         border-radius: 4px; 
@@ -30,7 +29,7 @@ export const Container = styled.div`
         padding: 35px 30px 35px 30px;
         background-color: ${THEME.colors.beige100};
         width: 40%;
-        height: 96.5%;
+        height: 68.5%;
         position: relative;
 
         &__scroll {

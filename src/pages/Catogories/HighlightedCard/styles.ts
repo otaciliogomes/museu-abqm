@@ -27,11 +27,12 @@ export const Container = styled.div`
         border-radius: 20px;
         width: 65%;
         @media (min-width: 0px) and (max-width: 1024px){
-            width: 40%;
+            display: none;
         }
     }
     @media (min-width: 0px) and (max-width: 1024px){
         width: 100%;
+        margin: 50px 0px 30px 0px;
     }
 `;
 
@@ -96,8 +97,11 @@ export const Content = styled.div`
         }
     }
     @media (min-width: 0px) and (max-width: 1024px){
-        width: 300px;
+        width: 100%;
         max-width: 100%;
+
+        justify-content: center;
+        align-items: center;
     }
 `;
 
