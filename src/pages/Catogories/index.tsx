@@ -21,9 +21,12 @@ interface CategoriesProps {
 
 export const Categories = ({ dataCategories }: CategoriesProps) => {
 	const [openModal, setOpenModal] = useState(false);
+	const [dataModal, setDataModal]= useState([])
 
-	function handleOpenModal() {
+	function handleOpenModal(data:any) {
 		setOpenModal(true);
+		setDataModal(data)
+		console.log(data)
 	}
 
 	function setCloseModal() {
@@ -52,17 +55,17 @@ export const Categories = ({ dataCategories }: CategoriesProps) => {
 				arrows
 				infinite
 			>
-				{dataCategories.map((item, index) => (
+				{dataCategories?.map((item, index) => (
 					<Card
 						key={v4()}
 						onClick={handleOpenModal}
-						firstItemCard={item}
+						firstItemCard={item.content_files}
 					/>
 				))}
 			</Slider>
 			{openModal && (
 				<Modal
-					data={dataTopo}
+					data={dataModal}
 					isOpen={openModal}
 					onClose={setCloseModal}
 				/>

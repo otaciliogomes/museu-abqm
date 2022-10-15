@@ -14,10 +14,11 @@ interface Card {
 export interface ModalProps {
     isOpen: boolean
     onClose: () => void
-    data: Card[]
+    data: any[]
 }
 
 export const Modal = ({ isOpen, onClose, data }: ModalProps) => {
+	const urlImage = 'https://adm.abqm.net.br:4431/app/webroot/img/content_files'
 	const settings = {
 		dots: false,
 		infinite: true,
@@ -46,7 +47,7 @@ export const Modal = ({ isOpen, onClose, data }: ModalProps) => {
 						{data?.map(item => (
 							<img
 								key={item?.id}
-								src={item?.image}
+								src={`${urlImage}/${item?.file}`}
 
 							/>
 						))}
