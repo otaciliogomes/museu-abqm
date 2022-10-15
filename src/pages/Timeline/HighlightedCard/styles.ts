@@ -37,7 +37,6 @@ export const Content = styled.div`
     max-width: 300px;
 
     padding: 10px;
-    overflow: hidden;
 
     @media (min-width: 0px) and (max-width: 1024px){
         display: flex;
@@ -142,6 +141,9 @@ export const WrapperMain = styled.div`
 
     margin-right: 20px;
 
+    @media (min-width: 0px) and (max-width: 1024px){
+        margin-top: 10px;
+    }
 `
 
 export const WrapperImage = styled.div`
