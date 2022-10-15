@@ -16,7 +16,6 @@ export const ContentInfo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 1600px;
     width: 100%;
 
     .slideGallery {

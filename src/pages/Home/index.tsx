@@ -39,7 +39,7 @@ export const Home = () => {
 
 	async function getModules() {
 		try {
-			setTimeout(async() => {
+			setTimeout(async () => {
 				const response = await api.get(endpoints.MUSEUABQM);
 				await getModuleItens(response.data[0].module_id);
 				setLoading(false);
@@ -165,18 +165,18 @@ export const Home = () => {
 	useEffect(() => {
 		getModules();
 	}, []);
-	
+
 	return (
 		<S.Container>
 			{loading ? (
-					<S.ContentLoading> 
-						<video autoPlay muted loop id="myVideo">
-							<source src={VideoBG} type="video/mp4" />
-						</video>
-						<img src={Logo} alt="Logo quarto de milha" /> 
-						<h1>{errorLoadingData ? "Erro ao tentar carregar dos dados, tente mais tarde.": "Carregando ..."}</h1>
-					</S.ContentLoading> 
-				) : (
+				<S.ContentLoading>
+					<video autoPlay muted loop id="myVideo">
+						<source src={VideoBG} type="video/mp4" />
+					</video>
+					<img src={Logo} alt="Logo quarto de milha" />
+					<h1>{errorLoadingData ? "Erro ao tentar carregar dos dados, tente mais tarde." : "Carregando ..."}</h1>
+				</S.ContentLoading>
+			) : (
 				<>
 					<video autoPlay muted loop id="myVideo">
 						<source src={VideoBG} type="video/mp4" />
@@ -227,7 +227,7 @@ export const Home = () => {
                    por todos que ajudaram a tomar a raça referência no país.
                 "
 							/>
-							<History dataHistory={dataHistory}/>
+							<History dataHistory={dataHistory} />
 						</div>
 						<div className="vh-100">
 							<Header

@@ -48,7 +48,11 @@ export const Modal = ({ isOpen, onClose, data }: ModalProps) => {
 							<img
 								key={item?.id}
 								src={`${urlImage}/${item?.file}`}
-
+								width="500" 
+								height="500"
+								style={{
+									objectFit: 'cover',
+								}}
 							/>
 						))}
 					</Slider>
